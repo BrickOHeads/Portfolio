@@ -1,0 +1,105 @@
+.Header {
+  font-family: 'Philosopher', sans-serif;
+  height: 250px;
+  background-color:#ce3635;
+  color: white;
+}
+
+h1 {
+  margin-top: -1%;
+  font-size: 5em;
+  text-align: center;
+  color: white;
+}
+
+/*Sentence*/
+.sentence{
+     color: white;
+     font-size: 3em;
+     text-align: left;
+     margin-left: 5%;
+     margin-bottom: 200px;
+}
+/*Wrapper*/
+.wrapper{
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10%;
+    padding: 10px 10px;
+    position: relative;
+    width: 70%;
+}
+
+/*Push Effect*/
+.pushEffect{
+	display: inline;
+	text-indent: 8px;
+}
+.pushEffect span{
+	animation: push 12.5s linear infinite 0s;
+	-ms-animation: push 12.5s linear infinite 0s;
+	-webkit-animation: push 12.5s linear infinite 0s;
+	color: black;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.pushEffect span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.pushEffect span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.pushEffect span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+.pushEffect span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+
+/*Push Effect Animation*/
+@-moz-keyframes push{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: rotate(0deg) scale(2) skew(0deg) translate(0px); }
+	10% { opacity: 1; -moz-transform: translateX(0px); }
+	25% { opacity: 1; -moz-transform: translateX(0px); }
+	30% { opacity: 0; -moz-transform: translateX(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0;}
+}
+@-webkit-keyframes push{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform:rotate(0deg) scale(2) skew(0deg) translate(0px);}
+		10% { opacity: 1; -webkit-transform: translateX(0px); }
+	25% { opacity: 1; -webkit-transform: translateX(0px); }
+	30% { opacity: 0; -webkit-transform: translateX(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes push{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: rotate(0deg) scale(2) skew(0deg) translate(0px); }
+	10% { opacity: 1; -ms-transform: translateX(0px); }
+	25% { opacity: 1; -ms-transform: translateX(0px); }
+	30% { opacity: 0; -ms-transform: translateX(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+/*Footer*/
+h3{
+	color: #fff;
+	font-size: 30px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+
+/*Animation provided by https://codepen.io/amritleone/pen/qERPmW*/
